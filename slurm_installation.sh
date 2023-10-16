@@ -43,7 +43,7 @@ log_command "useradd -r -g slurm -c \"Slurm Group\" -d /var/spool/slurm -p \"san
 log_command "apt install -y slurmd slurm-client"
 
 #Copy slurm conf from master node
-log_command "scp -P 1337 -i /home/sandboxadmin/goose3 sandboxadmin@192.168.1.100:/etc/slurm/slurm.conf /etc/slurm/slurm.conf"
+log_command "scp -P 1337 -i /home/sandboxadmin/goose3 sandboxadmin@**.**.*.***:/etc/slurm/slurm.conf /etc/slurm/slurm.conf"
 
 #Change permission of conf file
 log_command "chmod 777 /etc/slurm/slurm.conf"
